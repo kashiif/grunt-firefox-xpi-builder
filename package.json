@@ -16,7 +16,7 @@
     "url": "https://github.com/kashiif/grunt-firefox-xpi-builder/issues"
   },
   "homepage": "https://github.com/kashiif/grunt-firefox-xpi-builder#readme",
-  "devDependencies": {
+  "dependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-compress": "^0.14.0",
