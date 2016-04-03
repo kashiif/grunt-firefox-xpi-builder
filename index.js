@@ -33,7 +33,7 @@ module.exports = function(grunt, options) {
 		},
 		babelzilla: {
 			files: [
-				{expand: true, cwd: srcDir, src : ['**/*.dtd', '**/*.properties', '**/cue_translator.txt'],  dest: tempDir }
+        {expand: true, cwd: srcDir, src : ['**/*.dtd', '**/*.properties', '**/locale/*/*.txt'],  dest: tempDir }
 			]
 		}
 	},
@@ -95,7 +95,6 @@ module.exports = function(grunt, options) {
   
   // $: grunt bump
   grunt.loadNpmTasks('grunt-bump');
-'8'
 
   grunt.registerTask('renameVersionDir', 'renames the __versiondir__ directory', function() {
       var fs = require('fs'),
