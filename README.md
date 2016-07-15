@@ -8,9 +8,9 @@ This node script automates building a firefox extension xpi given the extension 
 
 The extension repository root should have a `package.json`. This can be achieved issuing a `npm init` and following the prompts. Setting up package.json is important because the script uses the configuration in build process. For example:
 
-- The <vesion> in `install.rdf` is replaced by 'version' field in `package.json`
-- The <homepageURL> in `install.rdf` is replaced by 'homepage' field in `package.json`
-- The <creator> in `install.rdf` is replaced by 'author' field in `package.json`
+- The &lt;vesion&gt; in `install.rdf` is replaced by 'version' field in `package.json`
+- The &lt;homepageURL&gt; in `install.rdf` is replaced by 'homepage' field in `package.json`
+- The &lt;creator&gt; in `install.rdf` is replaced by 'author' field in `package.json`
 - The final xpi file name is 'name' field in `package.json`.
 
 ### Install:
@@ -24,7 +24,7 @@ npm install git@github.com:kashiif/grunt-firefox-xpi-builder.git --save-dev
 
 Create `GruntFile.js` alongside `package.json` with the following minimal contents:
 
-```
+```js
 'use strict';
 
 module.exports = function(grunt) {
